@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
 public class DbClientes {
     private DataInputStream input;
     private DataOutputStream out;
-    private String path="D:/ImportantThings/Repositorios/Repository java/Proyecto1/clientes.txt";
+    private String path="D:/Java/NetBeans/Tienda/clientes.txt";
      private JComboBox<String> cbIdUsuario;
     private int maxID;
      Boolean ban = false;

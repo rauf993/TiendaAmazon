@@ -25,7 +25,7 @@ import javax.swing.JOptionPane;
 public class DbPiezas {
     private DataInputStream input;
     private DataOutputStream out;
-    private String path="D:/taller_mecanico/piezas.txt";
+    private String path="D:/Java/NetBeans/Tienda/piezas.txt";
     private int maxID;
     
      public DbPiezas(){

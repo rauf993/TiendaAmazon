@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 public class DbReparaciones {
     private DataInputStream input;
     private DataOutputStream out;
-    private String path="D:/taller_mecanico/reparaciones.txt";
+    private String path="D:/Java/NetBeans/Tienda/reparaciones.txt";
     private int maxID;
     
      public DbReparaciones(){

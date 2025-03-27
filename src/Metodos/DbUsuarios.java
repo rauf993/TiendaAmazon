@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class DbUsuarios {
     private DataInputStream input;
     private DataOutputStream out;
-    private String path="D:/taller_mecanico/usuarios.txt";
+    private String path="D:/Java/NetBeans/Tienda/usuarios.txt";
     private int maxID;
     Boolean ban = false;
     public DbUsuarios(){

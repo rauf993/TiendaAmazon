@@ -1,0 +1,36 @@
+Folio: 1
+Indice: 1
+ID Pieza: 9
+Pieza: 9
+Cantidad: 116
+-------------------------------
+Folio: 1
+Indice: 2
+ID Pieza: 9
+Pieza: 9
+Cantidad: 115
+-------------------------------
+Folio: 1
+Indice: 3
+ID Pieza: 9
+Pieza: 9
+Cantidad: 114
+-------------------------------
+Folio: 1
+Indice: 4
+ID Pieza: 9
+Pieza: 9
+Cantidad: 113
+-------------------------------
+Folio: 1
+Indice: 5
+ID Pieza: 9
+Pieza: 9
+Cantidad: 112
+-------------------------------
+Folio: 1
+Indice: 6
+ID Pieza: 9
+Pieza: 9
+Cantidad: 111
+-------------------------------

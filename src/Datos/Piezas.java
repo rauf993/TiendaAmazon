@@ -1,5 +1,7 @@
 package Datos;
 
+import java.util.ArrayList;
+
 
 
 public class Piezas {
@@ -30,5 +32,7 @@ public class Piezas {
     public void setStock(String stock) {
         this.stock = stock;
     }
+    
+
     
 }

@@ -24,7 +24,7 @@ public class DbVehiculos{
     private DataInputStream input;
     private DataOutputStream out;
 
-     private String path="D:/ImportantThings/Repositorios/Repository java/Proyecto1/vehiculos.txt";
+     private String path="D:/Java/NetBeans/Tienda/vehiculos.txt";
     private int maxID;
     private boolean ban=false;
      public DbVehiculos(){
@@ -280,7 +280,7 @@ public void editar(Vehiculos vehiculo) {
     }
 } 
     
-    /*public String comboBox(String ve) throws IOException {
+   public String comboBox(String ve) throws IOException {
     ArrayList<Vehiculos> list = new ArrayList<>();
     DataInputStream input = null; 
     try {
@@ -311,7 +311,7 @@ public void editar(Vehiculos vehiculo) {
         }
     }
     return ""; 
-}*/
+}
     public ArrayList<String> comboBox() throws IOException {
     ArrayList<Vehiculos> list = new ArrayList<>();
     ArrayList<String> listId = new ArrayList<>();

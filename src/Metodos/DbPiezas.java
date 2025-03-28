@@ -258,6 +258,7 @@ public class DbPiezas {
 } 
     public ArrayList<String> comboBox() throws IOException {
     ArrayList<Piezas> list = new ArrayList<>();
+    
      ArrayList<String> listNombre = new ArrayList<>();
     boolean ban = false; 
     DataInputStream input = null; 

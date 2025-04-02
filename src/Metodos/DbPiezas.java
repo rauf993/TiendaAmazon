@@ -153,6 +153,68 @@ public class DbPiezas {
 
     return aux;
 }
+       public Piezas aumentarStock(String nombrePieza, int cantidadDisminuir) throws IOException {
+    Piezas aux = null;
+    ArrayList<Piezas> listaPiezas = new ArrayList<>();
+    boolean piezaEncontrada = false;
+    try {
+        input = new DataInputStream(new FileInputStream(path));
+        int piezaid;
+        String nombre, stock;
+
+        while (true) {
+            try {
+                piezaid = input.readInt();
+                nombre = input.readUTF();
+                stock = input.readUTF();
+                if (nombrePieza.equals(nombre)) {
+                    int stockActual = Integer.parseInt(stock);
+                    if (cantidadDisminuir > stockActual) {
+                        JOptionPane.showMessageDialog(null, "La cantidad solicitada supera el stock disponible.");
+                        return null;
+                    }
+                    int stockRestante = stockActual + cantidadDisminuir;
+                    aux = new Piezas();
+                    aux.setPiezaid(piezaid);
+                    aux.setNombre(nombre);
+                    aux.setStock(String.valueOf(stockRestante));
+                    listaPiezas.add(aux);
+                    piezaEncontrada = true;
+                } else {
+                    Piezas p = new Piezas();
+                    p.setPiezaid(piezaid);
+                    p.setNombre(nombre);
+                    p.setStock(stock);
+                    listaPiezas.add(p);
+                }
+
+            } catch (EOFException ex) {
+                break;
+            }
+        }
+        input.close();
+        if (!piezaEncontrada) {
+            JOptionPane.showMessageDialog(null, "Pieza no encontrada.");
+            return null;
+        }
+        try (DataOutputStream out = new DataOutputStream(new FileOutputStream(path))) {
+            for (Piezas p : listaPiezas) {
+                out.writeInt(p.getPiezaid());
+                out.writeUTF(p.getNombre());
+                out.writeUTF(p.getStock());
+            }
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Error al escribir el archivo.");
+        }
+
+    } catch (FileNotFoundException ex) {
+        JOptionPane.showMessageDialog(null, "Archivo no encontrado.");
+    } catch (IOException ex) {
+        JOptionPane.showMessageDialog(null, "Error al leer el archivo.");
+    }
+
+    return aux;
+}
      
     public Piezas buscar(Piezas piezas) throws IOException {
     Piezas aux = null;

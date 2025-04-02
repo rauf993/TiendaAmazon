@@ -1,12 +1,6 @@
-Folio: 3
+Folio: 6
 Indice: 1
 ID Pieza: 9
-Pieza: 9
-Cantidad: 77
--------------------------------
-Folio: 3
-Indice: 2
-ID Pieza: 9
-Pieza: 9
-Cantidad: 74
+Pieza: rauf
+Cantidad: 6
 -------------------------------
